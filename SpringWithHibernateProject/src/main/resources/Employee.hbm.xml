@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+    <class name="com.itsuccesswin.beans.Employee" table="Employee1">
+        <id name="id" type="int" column="ID">
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="100" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="20" />
+        </property>
+        <property name="designation" type="string">
+            <column name="Designation" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
